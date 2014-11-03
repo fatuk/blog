@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Блог</title>
+    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://localhost:8080</link>
+    <description>Обзоры плагинов, рецепты, база знаний</description>
+    <pubDate>Mon, 03 Nov 2014 03:00:00 +0300</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>Пакеты для Sublime Text 2</title>
+      <link>http://localhost:8080/blog/articles/sublime-text-packages/</link>
+      <pubDate>Mon, 03 Nov 2014 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/blog/articles/sublime-text-packages/</guid>
+      <author></author>
+      <description>&lt;p&gt;Список пакетов, которыми я пользуюсь. Буду его периодически обновлять и ставить дату обновления.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/articles/sublime-text-packages/sublime.svg&quot; alt=&quot;sublime text&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/AutoFileName&quot;&gt;AutoFileName&lt;/a&gt; — автодополнение путей к файлам.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Backbone.js&quot;&gt;Backbone.js&lt;/a&gt; — добавляет набор сниппетов для стандартных структур Backbone — &lt;em&gt;view&lt;/em&gt;, &lt;em&gt;collection&lt;/em&gt;, &lt;em&gt;route&lt;/em&gt;, &lt;em&gt;model&lt;/em&gt;, etc. Лично мне сильно экономит время.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/CSS%20Format&quot;&gt;CSS Format&lt;/a&gt; — форматирует стили CSS/SASS/SCSS/LESS.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Emmet&quot;&gt;Emmet&lt;/a&gt; — как по мне, один из основных плагинов для верстки.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/FileDiffs&quot;&gt;FileDiffs&lt;/a&gt; — создает diff между двумя файлами, может сравнивать файл с буфером обмена.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/GitGutter&quot;&gt;GitGutter&lt;/a&gt; — помечает новые, изменившиеся или удаленные строки в файле.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/JavaScript%20Snippets&quot;&gt;JavaScript Snippets&lt;/a&gt; — оптимальный набор сниппетов для JS.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Javascript%20Beautify&quot;&gt;JavaScript Beautify&lt;/a&gt; — форматирование JS.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/LESS&quot;&gt;LESS&lt;/a&gt; — подсветка синтаксиса &lt;em&gt;less&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Markdown%20Extended&quot;&gt;Markdown Extended&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/SublimeLinter&quot;&gt;SublimeLinter&lt;/a&gt; — проверка синтаксиса.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/WebFont&quot;&gt;WebFont&lt;/a&gt; — быстрое подключение шрифтов, можно скачать.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/cdnjs&quot;&gt;cdnjs&lt;/a&gt; — подключение библиотек из &lt;em&gt;cdn&lt;/em&gt; облака &lt;a href=&quot;http://cdnjs.com&quot;&gt;cdnjs.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+  </channel>
+</rss>
