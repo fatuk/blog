@@ -219,6 +219,7 @@ footer .copy a {
   font-size: 60%;
   text-align: center;
   margin: 0;
+  margin-top: 1.5em;
 }
 .archive {
   width: 32em;

@@ -5,9 +5,37 @@
     <atom:link href="http://fatuk.github.io/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://fatuk.github.io/blog</link>
     <description>Обзоры плагинов, рецепты, база знаний</description>
-    <pubDate>Mon, 03 Nov 2014 03:00:00 +0300</pubDate>
+    <pubDate>Wed, 05 Nov 2014 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Варианты оформления ссылок для Skype</title>
+      <link>http://fatuk.github.io/blog/blog/articles/links-for-skype/</link>
+      <pubDate>Wed, 05 Nov 2014 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://fatuk.github.io/blog/blog/articles/links-for-skype/</guid>
+      <author></author>
+      <description>&lt;p&gt;Дополнительные атрибуты для skype-ссылок.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;skype:profile_name?call&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Call&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;skype:profile_name?chat&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Chat&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;skype:profile_name?voicemail&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Voicemail&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;skype:profile_name?sendfile&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Send file&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;skype:profile_name?add&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Add&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;skype:profile_name?userinfo&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;User info&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;-&quot;&gt;Примеры параметров:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;call&lt;/em&gt; —  позвонить&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;chat&lt;/em&gt; — чатиться&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;voicemail&lt;/em&gt; — оставить голосовое сообщение&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;sendfile&lt;/em&gt; — отправить файл&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;add&lt;/em&gt; — добавить в контакты&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;userinfo&lt;/em&gt; — посмотреть профайл&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Источник: &lt;a href=&quot;http://stackoverflow.com/questions/16177332/create-application-link-to-skype-profile&quot;&gt;http://stackoverflow.com/questions/16177332/create-application-link-to-skype-profile&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Пакеты для Sublime Text 2</title>
       <link>http://fatuk.github.io/blog/blog/articles/sublime-text-packages/</link>
