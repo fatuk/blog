@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Page Speed. Проверка оптимизации сайта. - Блог
+    </title>
+    <link rel="alternate" href="http://fatuk.github.io/blog/blog/feed.xml" type="application/rss+xml" title="Обзоры плагинов, рецепты, база знаний">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|PT Serif:400,700,300">
+    <link rel="stylesheet" href="/blog/style/main.css">
+  </head>
+  <body class="article-detail">
+    <header class="header">
+      <div class="content-wrap">
+        <h1>Page Speed. Проверка оптимизации сайта.</h1>
+        <p class="article-date">06 дек 2014</p>
+        <p class="author">Написал <span class="author"><a href="mailto:fatukk@gmail.com">Андрей Фатюк</a></span>
+        </p>
+      </div>
+    </header>
+    <div id="content">
+      <div class="content-wrap">
+        <article class="article"><a href="/blog/tag/node.js/1/" class="big-tag">node.js</a><a href="/blog/tag/page%20speed/1/" class="big-tag">page speed</a><a href="/blog/tag/оптимизация/1/" class="big-tag">оптимизация</a>
+          <section class="content"><p>Попалась на глаза <em>cli</em> для сервиса Google <a href="https://developers.google.com/speed/pagespeed/">Page Speed</a>. Он показывает на сколько ваш сайт оптимизирован. Автор — <a href="https://github.com/addyosmani">Эдди Османи</a>.</p>
+<p><span class="more"></span></p>
+<p>Установим пакет для&nbsp;node.js:</p>
+<pre><code class="lang-shell">sudo npm i -g psi
+</code></pre>
+<p>Теперь достаточно написать в&nbsp;консоли:</p>
+<pre><code class="lang-shell">psi site-for-testing.com
+</code></pre>
+<p>После чего в консоли появится оценка сайта с точки зрения оптимизации. Также будет расписан каждый&nbsp;пункт.</p>
+<pre><code class="lang-shell">psi github.com
+
+----------------------------------------------------------------
+
+URL:       https://github.com/
+Score:     82
+Strategy:  desktop
+
+Number Resources                                 | 22
+Number Hosts                                     | 5
+Total Request                                    | 3.38 kB
+Number Static Resources                          | 16
+Html Response                                    | 18.18 kB
+Css Response                                     | 427.35 kB
+Image Response                                   | 889.49 kB
+Javascript Response                              | 632.95 kB
+Other Response                                   | 76 B
+Number Js Resources                              | 4
+Number Css Resources                             | 2
+                                                 |
+Avoid Landing Page Redirects                     | 0
+Enable Gzip Compression                          | 0
+Leverage Browser Caching                         | 0.5
+Main Resource Server Response Time               | 0
+Minify Css                                       | 0
+Minify HTML                                      | 0
+Minify Java Script                               | 0.12
+Minimize Render Blocking Resources               | 12
+Optimize Images                                  | 6.81
+Prioritize Visible Content                       | 0
+
+----------------------------------------------------------------
+</code></pre>
+<p>Также есть различные параметры, например проверка под мобильные&nbsp;устройства:</p>
+<pre><code class="lang-shell">psi github.com --strategy mobile
+</code></pre>
+<hr>
+<h3 id="-">Полезные&nbsp;ссылки:</h3>
+<ul>
+<li>Кто не любит консоль — можно установить <a href="https://developers.google.com/speed/pagespeed/insights_extensions">расширение</a> для&nbsp;Хрома</li>
+<li>Про пункты результатов проверки почитать можно <a href="https://developers.google.com/speed/docs/insights/rules">тут</a></li>
+</ul>
+</section>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">
+        <div class="nav"><a href="/blog/">« Все записи</a></div>
+        <section class="about"><p>Цель этого блога - сохранить и упорядочить мои знания в области фронтенда.
+Планируется как своего рода сборник рецептов. Так же здесь я буду публиковать обзоры на те библиотеки и плагины, которыми я пользуюсь, либо планирую воспользоваться.</p>
+
+        </section>
+        <section class="copy">
+          <p>&copy; 2014&nbsp;<a href="http://fatuk.github.io">Андрей Фатюк&nbsp;</a>&mdash; работает на&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer><!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26912595 = new Ya.Metrika({ id:26912595, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26912595" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    <!-- Google analitics --><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-56450193-1', 'auto');ga('send', 'pageview');</script>
+  </body>
+</html>

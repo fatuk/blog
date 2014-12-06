@@ -5,9 +5,68 @@
     <atom:link href="http://fatuk.github.io/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://fatuk.github.io/blog</link>
     <description>Обзоры плагинов, рецепты, база знаний</description>
-    <pubDate>Wed, 05 Nov 2014 03:00:00 +0300</pubDate>
+    <pubDate>Sat, 06 Dec 2014 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Page Speed. Проверка оптимизации сайта.</title>
+      <link>http://fatuk.github.io/blog/blog/articles/psi-page-speed-insights/</link>
+      <pubDate>Sat, 06 Dec 2014 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://fatuk.github.io/blog/blog/articles/psi-page-speed-insights/</guid>
+      <author></author>
+      <description>&lt;p&gt;Попалась на глаза &lt;em&gt;cli&lt;/em&gt; для сервиса Google &lt;a href=&quot;https://developers.google.com/speed/pagespeed/&quot;&gt;Page Speed&lt;/a&gt;. Он показывает на сколько ваш сайт оптимизирован. Автор — &lt;a href=&quot;https://github.com/addyosmani&quot;&gt;Эдди Османи&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Установим пакет для node.js:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-shell&quot;&gt;sudo npm i -g psi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Теперь достаточно написать в консоли:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-shell&quot;&gt;psi site-for-testing.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;После чего в консоли появится оценка сайта с точки зрения оптимизации. Также будет расписан каждый пункт.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-shell&quot;&gt;psi github.com
+
+----------------------------------------------------------------
+
+URL:       https://github.com/
+Score:     82
+Strategy:  desktop
+
+Number Resources                                 | 22
+Number Hosts                                     | 5
+Total Request                                    | 3.38 kB
+Number Static Resources                          | 16
+Html Response                                    | 18.18 kB
+Css Response                                     | 427.35 kB
+Image Response                                   | 889.49 kB
+Javascript Response                              | 632.95 kB
+Other Response                                   | 76 B
+Number Js Resources                              | 4
+Number Css Resources                             | 2
+                                                 |
+Avoid Landing Page Redirects                     | 0
+Enable Gzip Compression                          | 0
+Leverage Browser Caching                         | 0.5
+Main Resource Server Response Time               | 0
+Minify Css                                       | 0
+Minify HTML                                      | 0
+Minify Java Script                               | 0.12
+Minimize Render Blocking Resources               | 12
+Optimize Images                                  | 6.81
+Prioritize Visible Content                       | 0
+
+----------------------------------------------------------------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Также есть различные параметры, например проверка под мобильные устройства:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-shell&quot;&gt;psi github.com --strategy mobile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;-&quot;&gt;Полезные ссылки:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Кто не любит консоль — можно установить &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights_extensions&quot;&gt;расширение&lt;/a&gt; для Хрома&lt;/li&gt;
+&lt;li&gt;Про пункты результатов проверки почитать можно &lt;a href=&quot;https://developers.google.com/speed/docs/insights/rules&quot;&gt;тут&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     <item>
       <title>Варианты оформления ссылок для Skype</title>
       <link>http://fatuk.github.io/blog/blog/articles/links-for-skype/</link>
