@@ -24,10 +24,39 @@
   padding: 0 0.7em;
 }
 .article .content img {
-  width: 100%;
   width: 20%;
   display: block;
   margin: 0 auto;
+}
+.article .content img[alt="Ubuntu logo"] {
+  margin-bottom: 1em;
+}
+.article .content .article-pic {
+  width: 100%;
+}
+.article .content table {
+  width: 100%;
+  font-size: 70%;
+  margin-bottom: 1em;
+}
+.article .content thead {
+  text-align: left;
+  background: #eee;
+  border: solid 1px #ddd;
+}
+.article .content thead th {
+  padding: .5em;
+  border: 1px solid #DDD;
+}
+.article .content tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+.article .content tbody tr:nth-child(even) {
+  background: #fbfbfb;
+}
+.article .content tbody td {
+  padding: .5em;
+  border: 1px solid #DDD;
 }
 .article.intro .content p {
   display: inline;
@@ -36,6 +65,13 @@
   text-decoration: underline;
   font-weight: 700;
   padding-left: 0.3em;
+  position: relative;
+}
+.article.intro .content .more i {
+  position: absolute;
+  right: -1.3em;
+  top: 50%;
+  margin-top: -0.4em;
 }
 .more,
 .date {

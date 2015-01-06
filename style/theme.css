@@ -70,7 +70,17 @@ pre .javascript .function {
   display: inline-block;
   margin-right: 1em;
   margin-bottom: 1.2em;
+  position: relative;
+  padding-left: 1.1em;
 }
 .article .big-tag:last-of-type {
   margin-right: 0;
+}
+.article .big-tag i {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.4em;
+  opacity: .7;
 }

@@ -5,9 +5,59 @@
     <atom:link href="http://fatuk.github.io/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://fatuk.github.io/blog</link>
     <description>Обзоры плагинов, рецепты, база знаний</description>
-    <pubDate>Sat, 06 Dec 2014 03:00:00 +0300</pubDate>
+    <pubDate>Tue, 06 Jan 2015 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Как установить Ubuntu</title>
+      <link>http://fatuk.github.io/blog/blog/articles/install-ubuntu/</link>
+      <pubDate>Tue, 06 Jan 2015 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://fatuk.github.io/blog/blog/articles/install-ubuntu/</guid>
+      <author></author>
+      <description>&lt;p&gt;&lt;img src=&quot;/blog/articles/install-ubuntu/ubuntu-logo.svg&quot; alt=&quot;Ubuntu logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Пошаговая инструкция по установке Ubuntu 12.04 - 14.10
+&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Предисловие&lt;/h2&gt;
+&lt;p&gt;Если планируется использовать Windows как вторую систему, то она должна быть предустановлена. В противном случае Windows не позволит загрузить &lt;a href=&quot;http://help.ubuntu.ru/wiki/grub&quot;&gt;GRUB&lt;/a&gt; и не будет выбора системы при загрузке.&lt;/p&gt;
+&lt;h2 id=&quot;-ubuntu&quot;&gt;Скачать Ubuntu&lt;/h2&gt;
+&lt;p&gt;Выбрать и скачать подходящий &lt;a href=&quot;http://www.ubuntu.com/download/desktop&quot;&gt;образ Ubuntu&lt;/a&gt;. Образ записать на диск или &lt;a href=&quot;http://help.ubuntu.ru/wiki/unetbootin&quot;&gt;создать&lt;/a&gt; загрузочную флешку.&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Разметка диска&lt;/h2&gt;
+&lt;p&gt;Диск размечается следующим образом:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Mount&lt;/th&gt;
+&lt;th&gt;Формат&lt;/th&gt;
+&lt;th&gt;Размер&lt;/th&gt;
+&lt;th&gt;Примечание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;root&lt;/td&gt;
+&lt;td&gt;ext4&lt;/td&gt;
+&lt;td&gt;50 GB&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;swap&lt;/td&gt;
+&lt;td&gt;linux-swap&lt;/td&gt;
+&lt;td&gt;8 GB&lt;/td&gt;
+&lt;td&gt;равен оперативной памяти, нужен для режима “сна”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;home&lt;/td&gt;
+&lt;td&gt;ext4&lt;/td&gt;
+&lt;td&gt;30 GB&lt;/td&gt;
+&lt;td&gt;все остальное не менее 30 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Для разметки можно воспользоваться программой &lt;a href=&quot;https://ru.wikipedia.org/wiki/GParted&quot;&gt;GParted&lt;/a&gt;, которая доступна при загрузке с Ubuntu LiveCD.&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Установка&lt;/h2&gt;
+&lt;p&gt;Загружаемся с LiveCD, устанавливаем.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Page Speed. Проверка оптимизации сайта.</title>
       <link>http://fatuk.github.io/blog/blog/articles/psi-page-speed-insights/</link>

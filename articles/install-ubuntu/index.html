@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>Варианты оформления ссылок для Skype - Блог
+    <title>Как установить Ubuntu - Блог
     </title>
     <link rel="alternate" href="http://fatuk.github.io/blog/blog/feed.xml" type="application/rss+xml" title="Обзоры плагинов, рецепты, база знаний">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|PT Serif:400,700,300">
@@ -14,35 +14,57 @@
   <body class="article-detail">
     <header class="header">
       <div class="content-wrap">
-        <h1>Варианты оформления ссылок для Skype</h1>
-        <p class="article-date">05 ноя 2014</p>
+        <h1>Как установить Ubuntu</h1>
+        <p class="article-date">06 янв 2015</p>
         <p class="author">Написал <span class="author"><a href="mailto:fatukk@gmail.com">Андрей Фатюк</a></span>
         </p>
       </div>
     </header>
     <div id="content">
       <div class="content-wrap">
-        <article class="article"><a href="/blog/tag/skype/1/" class="big-tag">skype<i class="fa fa-tag"></i></a>
-          <section class="content"><p>Дополнительные атрибуты для&nbsp;skype-ссылок.</p>
-<p><span class="more"></span></p>
-<pre><code class="lang-html">
-<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"skype:profile_name?call"</span>&gt;</span>Call<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"skype:profile_name?chat"</span>&gt;</span>Chat<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"skype:profile_name?voicemail"</span>&gt;</span>Voicemail<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"skype:profile_name?sendfile"</span>&gt;</span>Send file<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"skype:profile_name?add"</span>&gt;</span>Add<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"skype:profile_name?userinfo"</span>&gt;</span>User info<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-</code></pre>
-<h3 id="-">Примеры&nbsp;параметров:</h3>
-<ul>
-<li><em>call</em> —&nbsp;позвонить</li>
-<li><em>chat</em> —&nbsp;чатиться</li>
-<li><em>voicemail</em> — оставить голосовое&nbsp;сообщение</li>
-<li><em>sendfile</em> — отправить&nbsp;файл</li>
-<li><em>add</em> — добавить в&nbsp;контакты</li>
-<li><em>userinfo</em> — посмотреть&nbsp;профайл</li>
-</ul>
-<p>Источник: <a href="http://stackoverflow.com/questions/16177332/create-application-link-to-skype-profile">http://stackoverflow.com/questions/16177332/create-application-link-to-skype-profile</a></p>
+        <article class="article"><a href="/blog/tag/ubuntu/1/" class="big-tag">ubuntu<i class="fa fa-tag"></i></a><a href="/blog/tag/howto/1/" class="big-tag">howto<i class="fa fa-tag"></i></a>
+          <section class="content"><p><img src="/blog/articles/install-ubuntu/ubuntu-logo.svg" alt="Ubuntu logo"></p>
+<p>Пошаговая инструкция по установке Ubuntu 12.04 - 14.10
+<span class="more"></span></p>
+<h2 id="-">Предисловие</h2>
+<p>Если планируется использовать Windows как вторую систему, то она должна быть предустановлена. В противном случае Windows не позволит загрузить <a href="http://help.ubuntu.ru/wiki/grub"><span class="caps">GRUB</span></a> и не будет выбора системы при&nbsp;загрузке.</p>
+<h2 id="-ubuntu">Скачать&nbsp;Ubuntu</h2>
+<p>Выбрать и скачать подходящий <a href="http://www.ubuntu.com/download/desktop">образ Ubuntu</a>. Образ записать на диск или <a href="http://help.ubuntu.ru/wiki/unetbootin">создать</a> загрузочную&nbsp;флешку.</p>
+<h2 id="-">Разметка&nbsp;диска</h2>
+<p>Диск размечается следующим&nbsp;образом:</p>
+<table>
+<thead>
+<tr>
+<th>Mount</th>
+<th>Формат</th>
+<th>Размер</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>root</td>
+<td>ext4</td>
+<td>50 <span class="caps">GB</span></td>
+<td>-</td>
+</tr>
+<tr>
+<td>swap</td>
+<td>linux-swap</td>
+<td>8 <span class="caps">GB</span></td>
+<td>равен оперативной памяти, нужен для режима “сна”</td>
+</tr>
+<tr>
+<td>home</td>
+<td>ext4</td>
+<td>30 <span class="caps">GB</span></td>
+<td>все остальное не менее 30 <span class="caps">GB</span></td>
+</tr>
+</tbody>
+</table>
+<p>Для разметки можно воспользоваться программой <a href="https://ru.wikipedia.org/wiki/GParted">GParted</a>, которая доступна при загрузке с Ubuntu&nbsp;LiveCD.</p>
+<h2 id="-">Установка</h2>
+<p>Загружаемся с LiveCD,&nbsp;устанавливаем.</p>
 </section><script type="text/javascript">document.write(VK.Share.button(false,{type: "button", text: "Перепостить на стену"}));</script>
         </article>
       </div>

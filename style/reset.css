@@ -35,6 +35,9 @@ a:hover {
   color: #ff8000;
   text-decoration: underline;
 }
+a:hover i {
+  color: #171717;
+}
 p {
   margin-bottom: 1.52em;
 }
@@ -90,4 +93,15 @@ hr {
 ::-moz-selection {
   background: #ffa64d;
   /* Gecko Browsers */
+}
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
 }
