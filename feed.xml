@@ -5,9 +5,29 @@
     <atom:link href="http://fatuk.github.io/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://fatuk.github.io/blog</link>
     <description>Обзоры плагинов, рецепты, база знаний</description>
-    <pubDate>Sun, 11 Jan 2015 03:00:00 +0300</pubDate>
+    <pubDate>Mon, 12 Jan 2015 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Как сгенерировать SSH ключ для Github.</title>
+      <link>http://fatuk.github.io/blog/blog/articles/git-ssh-key/</link>
+      <pubDate>Mon, 12 Jan 2015 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://fatuk.github.io/blog/blog/articles/git-ssh-key/</guid>
+      <author></author>
+      <description>&lt;p&gt;Для того чтобы каждый раз не логиниться, при отправке изменений на удаленный сервер, нам понадобится SSH ключ.
+&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ssh-keygen -t rsa -C &amp;quot;your_email@example.com&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enter&lt;/li&gt;
+&lt;li&gt;Enter&lt;/li&gt;
+&lt;li&gt;Enter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Готово. В домашнем каталоге в папке &lt;code&gt;.ssh&lt;/code&gt; находятся сгенерированные файлы ключей: &lt;code&gt;id_rsa&lt;/code&gt; и &lt;code&gt;id_rsa.pub&lt;/code&gt;.
+Нам нужен второй файл. Открываем его в редакторе, копируем его содержимое.&lt;/p&gt;
+&lt;p&gt;Заходим на страницу настрое Github &lt;a href=&quot;https://github.com/settings/ssh&quot;&gt;https://github.com/settings/ssh&lt;/a&gt;. Нажимаем &lt;strong&gt;Add SSH key&lt;/strong&gt;, указываем любое название ключа, в поле ниже вставляем содержимого нашего публичного ключа. Теперь можно использовать SSH (&lt;code&gt;git@github.com:fatuk/fatuk.github.com.git&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/generating-ssh-keys/&quot;&gt;Источник&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Ubuntu. Установка/удаление Apache2 + php5 + MySQL</title>
       <link>http://fatuk.github.io/blog/blog/articles/install-apache-php-mysql/</link>

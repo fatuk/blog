@@ -4,52 +4,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>Блог
+    <title>Как сгенерировать SSH ключ для Github. - Блог
     </title>
     <link rel="alternate" href="http://fatuk.github.io/blog/blog/feed.xml" type="application/rss+xml" title="Обзоры плагинов, рецепты, база знаний">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|PT Serif:400,700,300">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/blog/style/main.css"><script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
   </head>
-  <body>
+  <body class="article-detail">
     <header class="header">
       <div class="content-wrap">
-        <div class="logo">
-          <h1><a href="http://fatuk.github.io/blog">Блог</a></h1>
-          <p class="description">Обзоры плагинов, рецепты, база знаний</p>
-        </div>
+        <h1>Как сгенерировать SSH ключ для Github.</h1>
+        <p class="article-date">12 янв 2015</p>
+        <p class="author">Написал <span class="author"><a href="mailto:fatukk@gmail.com">Андрей Фатюк</a></span>
+        </p>
       </div>
     </header>
     <div id="content">
       <div class="content-wrap">
-        <article class="article intro">
-          <header>
-            <p class="date"><span>05 ноя 2014</span>
-            </p>
-            <h2><a href="/blog/articles/links-for-skype/">Варианты оформления ссылок для Skype</a></h2>
-          </header>
-          <section class="content"><p>Дополнительные атрибуты для&nbsp;skype-ссылок.</p>
-<p>
-            <p class="more"><a href="/blog/articles/links-for-skype/">Читать<i class="fa fa-arrow-circle-right"></i></a></p>
-          </section>
-        </article>
-        <article class="article intro">
-          <header>
-            <p class="date"><span>03 ноя 2014</span>
-            </p>
-            <h2><a href="/blog/articles/sublime-text-packages/">Пакеты для Sublime Text 2</a></h2>
-          </header>
-          <section class="content"><p>Список пакетов, которыми я пользуюсь. Буду его периодически обновлять и ставить дату&nbsp;обновления.</p>
-<p>
-            <p class="more"><a href="/blog/articles/sublime-text-packages/">Читать<i class="fa fa-arrow-circle-right"></i></a></p>
-          </section>
+        <article class="article"><a href="/blog/tag/git/1/" class="big-tag">git<i class="fa fa-tag"></i></a><a href="/blog/tag/github/1/" class="big-tag">github<i class="fa fa-tag"></i></a><a href="/blog/tag/ssh-key/1/" class="big-tag">ssh-key<i class="fa fa-tag"></i></a>
+          <section class="content"><p>Для того чтобы каждый раз не логиниться, при отправке изменений на удаленный сервер, нам понадобится <span class="caps">SSH</span> ключ.
+<span class="more"></span></p>
+<ul>
+<li><code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code></li>
+<li>Enter</li>
+<li>Enter</li>
+<li>Enter</li>
+</ul>
+<p>Готово. В домашнем каталоге в папке <code>.ssh</code> находятся сгенерированные файлы ключей: <code>id_rsa</code> и <code>id_rsa.pub</code>.
+Нам нужен второй файл. Открываем его в редакторе, копируем его&nbsp;содержимое.</p>
+<p>Заходим на страницу настрое Github <a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a>. Нажимаем <strong>Add <span class="caps">SSH</span> key</strong>, указываем любое название ключа, в поле ниже вставляем содержимого нашего публичного ключа. Теперь можно использовать <span class="caps">SSH</span> (<code>git@github.com:fatuk/fatuk.github.com.git</code>).</p>
+<p><a href="https://help.github.com/articles/generating-ssh-keys/">Источник</a></p>
+</section><script type="text/javascript">document.write(VK.Share.button(false,{type: "button", text: "Перепостить на стену"}));</script>
         </article>
       </div>
     </div>
     <footer>
       <div class="content-wrap">
-        <div class="nav"><a href="/blog/"><i class="fa fa-hand-o-left"></i><span>новое</span></a><a href="/blog/archive.html"><i class="fa fa-archive"></i><span>Архив</span></a><a href="/blog/tags.html"><i class="fa fa-tags"></i><span>Теги</span></a>
-        </div>
+        <div class="nav"><a href="/blog/"><i class="fa fa-hand-o-left"></i><span>все записи</span></a><a href="/blog/archive.html"><i class="fa fa-archive"></i><span>Архив</span></a><a href="/blog/tags.html"><i class="fa fa-tags"></i><span>Теги</span></a></div>
         <section class="about"><p>Цель этого блога - сохранить и упорядочить мои знания в области фронтенда.
 Планируется как своего рода сборник рецептов. Так же здесь я буду публиковать обзоры на те библиотеки и плагины, которыми я пользуюсь, либо планирую воспользоваться.</p>
 
