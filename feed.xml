@@ -1,13 +1,80 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Блог</title>
+    <title>Блог о фронтенде</title>
     <atom:link href="http://fatuk.github.io/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://fatuk.github.io/blog</link>
-    <description>Обзоры плагинов, рецепты, база знаний</description>
+    <description>Заметки на полях</description>
     <pubDate>Mon, 12 Jan 2015 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Конфигурация git. Включение подсветки текущей ветки.</title>
+      <link>http://fatuk.github.io/blog/blog/articles/config-bash-and-git/</link>
+      <pubDate>Mon, 12 Jan 2015 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://fatuk.github.io/blog/blog/articles/config-bash-and-git/</guid>
+      <author></author>
+      <description>&lt;p&gt;Для удобства работы с git включим подсветку текущей ветки. А также добавим стандартные алиасы для git.
+&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Для начала установим git: &lt;code&gt;sudo apt-get install git&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Добавим стандартные алиасы для команд и данные пользователя:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;&lt;span class=&quot;shebang&quot;&gt;#!/bin/bash&lt;/span&gt;
+git config --global user.name &lt;span class=&quot;string&quot;&gt;&quot;fatuk&quot;&lt;/span&gt; &amp;amp;&amp;amp;
+git config --global user.email &lt;span class=&quot;string&quot;&gt;&quot;fatukk@gmail.com&quot;&lt;/span&gt; &amp;amp;&amp;amp;
+git config --global color.ui auto &amp;amp;&amp;amp;
+git config --global alias.co checkout &amp;amp;&amp;amp;
+git config --global alias.ci commit &amp;amp;&amp;amp;
+git config --global alias.st status &amp;amp;&amp;amp;
+git config --global alias.br branch &amp;amp;&amp;amp;
+git config --global alias.hist &lt;span class=&quot;string&quot;&gt;'log --pretty=format:&quot;%h %ad | %s%d [%an]&quot; --graph --date=short'&lt;/span&gt; &amp;amp;&amp;amp;
+git config --global alias.type &lt;span class=&quot;string&quot;&gt;'cat-file -t'&lt;/span&gt; &amp;amp;&amp;amp;
+git config --global alias.dump &lt;span class=&quot;string&quot;&gt;'cat-file -p'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Теперь настроим bash, чтобы он нам показывал текущую ветку:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Создадим в домашнем каталоге файл &lt;code&gt;.bash-git&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;function parse_git_branch {
+    git branch --no-color &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&amp;gt; /dev/null | sed &lt;span class=&quot;operator&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'/^[^*]/d'&lt;/span&gt; &lt;span class=&quot;operator&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'s/* \(.*\)/(\1)/'&lt;/span&gt;
+}
+
+function proml {
+    local        BLUE=&lt;span class=&quot;string&quot;&gt;&quot;\[\033[0;34m\]&quot;&lt;/span&gt;
+    local         RED=&lt;span class=&quot;string&quot;&gt;&quot;\[\033[0;31m\]&quot;&lt;/span&gt;
+    local      YELLOW=&lt;span class=&quot;string&quot;&gt;&quot;\[\033[0;33m\]&quot;&lt;/span&gt;
+    local   LIGHT_RED=&lt;span class=&quot;string&quot;&gt;&quot;\[\033[1;31m\]&quot;&lt;/span&gt;
+    local       GREEN=&lt;span class=&quot;string&quot;&gt;&quot;\[\033[0;32m\]&quot;&lt;/span&gt;
+    local LIGHT_GREEN=&lt;span class=&quot;string&quot;&gt;&quot;\[\033[1;32m\]&quot;&lt;/span&gt;
+    local  LIGHT_GRAY=&lt;span class=&quot;string&quot;&gt;&quot;\[\033[0;37m\]&quot;&lt;/span&gt;
+    &lt;span class=&quot;keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$TERM&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt;
+        xterm*)
+        TITLEBAR=&lt;span class=&quot;string&quot;&gt;'\[\033]0;\u@\h:\w\007\]'&lt;/span&gt;
+        ;;
+        *)
+        TITLEBAR=&lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;
+        ;;
+    &lt;span class=&quot;keyword&quot;&gt;esac&lt;/span&gt;
+
+PS1=&lt;span class=&quot;string&quot;&gt;&quot;&lt;span class=&quot;variable&quot;&gt;$PS1&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;$YELLOW&lt;/span&gt;\$(parse_git_branch)&lt;span class=&quot;variable&quot;&gt;$LIGHT_GRAY&lt;/span&gt;&quot;&lt;/span&gt;
+PS2=&lt;span class=&quot;string&quot;&gt;'&amp;gt; '&lt;/span&gt;
+PS4=&lt;span class=&quot;string&quot;&gt;'+ '&lt;/span&gt;
+}
+
+proml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Откроем файл &lt;code&gt;~/.bashrc&lt;/code&gt; и добавим в конец этого файла строку: &lt;code&gt;source ${HOME}/.bash-git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Перезапускаем shell и вуаля, теперь мы видим название текущей ветки.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;-&quot;&gt;Полезные ссылки:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://gist.github.com/f6f82f95746b67209e16.git&quot;&gt;set-git-config&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gist.github.com/9585750.git&quot;&gt;.bashrc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     <item>
       <title>Как сгенерировать SSH ключ для Github.</title>
       <link>http://fatuk.github.io/blog/blog/articles/git-ssh-key/</link>
