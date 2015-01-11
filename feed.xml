@@ -1,13 +1,86 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Блог о фронтенде</title>
+    <title>Блог</title>
     <atom:link href="http://fatuk.github.io/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://fatuk.github.io/blog</link>
-    <description>Заметки на полях</description>
-    <pubDate>Tue, 06 Jan 2015 03:00:00 +0300</pubDate>
+    <description>Обзоры плагинов, рецепты, база знаний</description>
+    <pubDate>Sun, 11 Jan 2015 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Ubuntu. Установка/удаление Apache2 + php5 + MySQL</title>
+      <link>http://fatuk.github.io/blog/blog/articles/install-apache-php-mysql/</link>
+      <pubDate>Sun, 11 Jan 2015 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://fatuk.github.io/blog/blog/articles/install-apache-php-mysql/</guid>
+      <author></author>
+      <description>&lt;p&gt;Оставлю здесь, чтобы не забыть…
+&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-apache&quot;&gt;Установка Apache&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Обновим информацию о пакетах: &lt;code&gt;sudo apt-get update&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Обновим систему: &lt;code&gt;sudo apt-get upgrade&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Установим apache: &lt;code&gt;sudo apt-get install apache2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Запустим апач: &lt;code&gt;sudo service apache2 start&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;-apache&quot;&gt;Работа с Apache&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;значение&lt;/th&gt;
+&lt;th&gt;команда&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;запуск&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sudo service apache2 start&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;остановка&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sudo service apache2 stop&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;перезапуск&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sudo service apache2 restart&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;-php-&quot;&gt;Установим PHP:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get install php5 libapache2-mod-php5&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;-mysql-&quot;&gt;Установим MySQL:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get install mysql-server&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Замена пароля к серверу БД:&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo mysqladmin -u root password новый_пароль&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;-&quot;&gt;Удаление&lt;/h2&gt;
+&lt;h3 id=&quot;-&quot;&gt;Удаляем пакеты в обратном порядке:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get purge php5-mysql&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get purge php5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get purge mysql-server&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get purge apache2&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;-&quot;&gt;Удаляем зависимости:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get purge apache2.2-common&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get purge apache2-mpm-prefork&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get purge libapache2-mod-php5&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;-&quot;&gt;Удаляем зависимости:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/etc/apache2/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/php5/apache2/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;-&quot;&gt;Источник&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://start.besthost.by/post/86&quot;&gt;http://start.besthost.by/post/86&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Как установить Ubuntu</title>
       <link>http://fatuk.github.io/blog/blog/articles/install-ubuntu/</link>
