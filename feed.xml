@@ -5,9 +5,36 @@
     <atom:link href="http://fatuk.github.io/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://fatuk.github.io/blog</link>
     <description>Заметки на полях</description>
-    <pubDate>Mon, 12 Jan 2015 03:00:00 +0300</pubDate>
+    <pubDate>Sat, 31 Jan 2015 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Скрипт для создания виртуальных хостов под apache2</title>
+      <link>http://fatuk.github.io/blog/blog/articles/vhost/</link>
+      <pubDate>Sat, 31 Jan 2015 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://fatuk.github.io/blog/blog/articles/vhost/</guid>
+      <author></author>
+      <description>&lt;p&gt;&lt;img src=&quot;/blog/articles/vhost/apache.png&quot; alt=&quot;apache&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Для меня всегда была проблема создать новый виртуальный хост в Ubuntu.
+Но теперь я нашел &lt;a href=&quot;https://gist.github.com/gistwebdev/5666279&quot;&gt;скрипт&lt;/a&gt; для автоматизации этого процесса.
+&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Сначала я решил использовать этот скрипт не модифицируя его. Но оказалось, что он использует шаблон для генерации конфига виртуальных хостов. И этот шаблон мне немного не подошел. В итоге я сделал форк и скрипта, и шаблона. &lt;a href=&quot;https://github.com/fatuk/vhost&quot;&gt;Ссылка&lt;/a&gt; на мой форк. Там есть документация. Здесь я немного расскажу, что скрипт умеет делать.&lt;/p&gt;
+&lt;p&gt;Команда &lt;code&gt;vhost имя_сайта&lt;/code&gt; создает папку &lt;code&gt;~/www/имя_сайта&lt;/code&gt;, добавляет конфиг с таким же именем в папку &lt;code&gt;/etc/apache2/sites-available/имя_сайта.conf&lt;/code&gt;, делает его активным, т.е. создает ссылку на конфиг в папке &lt;code&gt;sites-enabled&lt;/code&gt; и дописывает новый сайт в файл &lt;code&gt;/etc/hosts&lt;/code&gt;. Apache перегружается скриптом. Вобщем теперь можно легко создавать виртуальный хост одной командой из консоли.&lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;Список возможностей скрипта:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;добавление&lt;/li&gt;
+&lt;li&gt;удаление&lt;/li&gt;
+&lt;li&gt;список доступных/активных хостов&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;-&quot;&gt;Можно переопределить значения по умолчанию, если они не подходят:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;email админа&lt;/li&gt;
+&lt;li&gt;папку, в которой скрипт разместит хост&lt;/li&gt;
+&lt;li&gt;адрес будущего сайта&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Если у кого-то возникнут идеи или предложения по модернизации скрипта, то милости прошу в мой &lt;a href=&quot;https://github.com/fatuk/vhost&quot;&gt;репозиторий&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Конфигурация git. Включение подсветки текущей ветки.</title>
       <link>http://fatuk.github.io/blog/blog/articles/config-bash-and-git/</link>

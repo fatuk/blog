@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Скрипт для создания виртуальных хостов под apache2 - Блог о фронтенде
+    </title>
+    <link rel="alternate" href="http://fatuk.github.io/blog/blog/feed.xml" type="application/rss+xml" title="Заметки на полях">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|PT Serif:400,700,300">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/blog/style/main.css"><script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+  </head>
+  <body class="article-detail">
+    <header class="header">
+      <div class="content-wrap">
+        <h1>Скрипт для создания виртуальных хостов под apache2</h1>
+        <p class="article-date">31 янв 2015</p>
+        <p class="author">Написал <span class="author"><a href="mailto:fatukk@gmail.com">Андрей Фатюк</a></span>
+        </p>
+      </div>
+    </header>
+    <div id="content">
+      <div class="content-wrap">
+        <article class="article"><a href="/blog/tag/apache/1/" class="big-tag">apache<i class="fa fa-tag"></i></a><a href="/blog/tag/virtual%20host/1/" class="big-tag">virtual host<i class="fa fa-tag"></i></a><a href="/blog/tag/shell/1/" class="big-tag">shell<i class="fa fa-tag"></i></a><a href="/blog/tag/config/1/" class="big-tag">config<i class="fa fa-tag"></i></a><a href="/blog/tag/Ubuntu/1/" class="big-tag">Ubuntu<i class="fa fa-tag"></i></a>
+          <section class="content"><p><img src="/blog/articles/vhost/apache.png" alt="apache"></p>
+<p>Для меня всегда была проблема создать новый виртуальный хост в Ubuntu.
+Но теперь я нашел <a href="https://gist.github.com/gistwebdev/5666279">скрипт</a> для автоматизации этого процесса.
+<span class="more"></span></p>
+<p>Сначала я решил использовать этот скрипт не модифицируя его. Но оказалось, что он использует шаблон для генерации конфига виртуальных хостов. И этот шаблон мне немного не подошел. В итоге я сделал форк и скрипта, и шаблона. <a href="https://github.com/fatuk/vhost">Ссылка</a> на мой форк. Там есть документация. Здесь я немного расскажу, что скрипт умеет&nbsp;делать.</p>
+<p>Команда <code>vhost имя_сайта</code> создает папку <code>~/www/имя_сайта</code>, добавляет конфиг с таким же именем в папку <code>/etc/apache2/sites-available/имя_сайта.conf</code>, делает его активным, т.е. создает ссылку на конфиг в папке <code>sites-enabled</code> и дописывает новый сайт в файл <code>/etc/hosts</code>. Apache перегружается скриптом. Вобщем теперь можно легко создавать виртуальный хост одной командой из&nbsp;консоли.</p>
+<h3 id="-">Список возможностей&nbsp;скрипта:</h3>
+<ul>
+<li>добавление</li>
+<li>удаление</li>
+<li>список доступных/активных&nbsp;хостов</li>
+</ul>
+<h3 id="-">Можно переопределить значения по умолчанию, если они не&nbsp;подходят:</h3>
+<ul>
+<li>email&nbsp;админа</li>
+<li>папку, в которой скрипт разместит&nbsp;хост</li>
+<li>адрес будущего&nbsp;сайта</li>
+</ul>
+<p>Если у кого-то возникнут идеи или предложения по модернизации скрипта, то милости прошу в мой <a href="https://github.com/fatuk/vhost">репозиторий</a>.</p>
+</section><script type="text/javascript">document.write(VK.Share.button(false,{type: "button", text: "Перепостить на стену"}));</script>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">
+        <div class="nav"><a href="/blog/"><i class="fa fa-hand-o-left"></i><span>все записи</span></a><a href="/blog/archive.html"><i class="fa fa-archive"></i><span>Архив</span></a><a href="/blog/tags.html"><i class="fa fa-tags"></i><span>Теги</span></a></div>
+        <section class="about"><p>Здесь я планирую описывать фронтенд инструменты и их настройки.</p>
+<p>Блог заводился чтобы упорядочить  мой личный ресерч.
+Если кому-то еще пригодятся мои статьи, буду признателен за указание ссылки на мой блог.</p>
+
+        </section>
+        <section class="copy">
+          <p>&copy; 2015&nbsp;<a href="http://fatuk.github.io">Андрей Фатюк&nbsp;</a>&mdash; работает на&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer><!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26912595 = new Ya.Metrika({id:26912595, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26912595" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+  </body>
+</html>
