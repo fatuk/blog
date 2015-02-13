@@ -19,8 +19,8 @@
 &lt;p&gt;&lt;img class=&quot;article-pic&quot; src=&quot;demo.gif&quot; alt=&quot;кускус&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;-&quot;&gt;Предисловие&lt;/h2&gt;
 &lt;p&gt;Как-то понадобилось записать мои действия в консоли.
-Нашелся консольный скринрекодер &lt;strong&gt;byzans-record&lt;/strong&gt;. Качество записи меня устроило, но каждый раз указывать вручную область записи мне неподходило. Немного погуглив я нашел вариант скрипта, где была возможность указывать окно, а все параметры скрипт получал автоматически.&lt;/p&gt;
-&lt;p&gt;Представляю вашему вниманию мою сборку на основе &lt;a href=&quot;https://gist.github.com/lucy/3042755&quot;&gt;того&lt;/a&gt;скрипта.&lt;/p&gt;
+Нашелся консольный скринрекодер &lt;strong&gt;byzans-record&lt;/strong&gt;. Качество записи меня устроило, но каждый раз указывать вручную область записи мне не подходило. Немного погуглив я нашел вариант скрипта, где была возможность указывать окно, а все параметры скрипт получал автоматически.&lt;/p&gt;
+&lt;p&gt;Представляю вашему вниманию мою сборку на основе &lt;a href=&quot;https://gist.github.com/lucy/3042755&quot;&gt;того&lt;/a&gt; скрипта.&lt;/p&gt;
 &lt;h2 id=&quot;-&quot;&gt;Установка:&lt;/h2&gt;
 &lt;p&gt;Просто поместите файл скрипта &lt;code&gt;recrec&lt;/code&gt; из &lt;a href=&quot;https://github.com/fatuk/recrec&quot;&gt;репозитория&lt;/a&gt; в папку &lt;code&gt;~/bin&lt;/code&gt;. Теперь вы можете вызвать его из консоли &lt;code&gt;recrec&lt;/code&gt;. Попробуйте написать &lt;code&gt;recrec --help&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;-&quot;&gt;Что скрипт умеет:&lt;/h2&gt;
