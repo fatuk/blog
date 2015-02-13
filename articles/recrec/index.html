@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Скрипт для запуска скрин рекордера byzans-record - Блог о фронтенде
+    </title>
+    <link rel="alternate" href="http://fatuk.github.io/blog/blog/feed.xml" type="application/rss+xml" title="Заметки на полях">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|PT Serif:400,700,300">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/blog/style/main.css"><script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+  </head>
+  <body class="article-detail">
+    <header class="header">
+      <div class="content-wrap">
+        <h1>Скрипт для запуска скрин рекордера byzans-record</h1>
+        <p class="article-date">14 фев 2015</p>
+        <p class="author">Написал <span class="author"><a href="mailto:fatukk@gmail.com">Андрей Фатюк</a></span>
+        </p>
+      </div>
+    </header>
+    <div id="content">
+      <div class="content-wrap">
+        <article class="article"><a href="/blog/tag/byzanz/1/" class="big-tag">byzanz<i class="fa fa-tag"></i></a><a href="/blog/tag/запись%20экрана/1/" class="big-tag">запись экрана<i class="fa fa-tag"></i></a><a href="/blog/tag/screencast/1/" class="big-tag">screencast<i class="fa fa-tag"></i></a><a href="/blog/tag/gif/1/" class="big-tag">gif<i class="fa fa-tag"></i></a><a href="/blog/tag/кускус/1/" class="big-tag">кускус<i class="fa fa-tag"></i></a>
+          <section class="content"><p>Небольшой обзор скрипта, который я собрал для себя, чтобы записывать короткие скринкасты в формате&nbsp;gif.</p>
+<p><span class="more"></span></p>
+<p><img class="article-pic" src="demo.gif" alt="кускус"></p>
+<h2 id="-">Предисловие</h2>
+<p>Как-то понадобилось записать мои действия в консоли.
+Нашелся консольный скринрекодер <strong>byzans-record</strong>. Качество записи меня устроило, но каждый раз указывать вручную область записи мне неподходило. Немного погуглив я нашел вариант скрипта, где была возможность указывать окно, а все параметры скрипт получал&nbsp;автоматически.</p>
+<p>Представляю вашему вниманию мою сборку на основе <a href="https://gist.github.com/lucy/3042755">того</a>скрипта.</p>
+<h2 id="-">Установка:</h2>
+<p>Просто поместите файл скрипта <code>recrec</code> из <a href="https://github.com/fatuk/recrec">репозитория</a> в папку <code>~/bin</code>. Теперь вы можете вызвать его из консоли <code>recrec</code>. Попробуйте написать <code>recrec --help</code>.</p>
+<h2 id="-">Что скрипт&nbsp;умеет:</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">параметр</th>
+<th style="text-align:left">описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>-h</code> or <code>--help</code></td>
+<td style="text-align:left">справка</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-name</code></td>
+<td style="text-align:left">указать имя конечного файла</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-ext</code></td>
+<td style="text-align:left">указать расширение (gif, flv, ogg, ogv)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-del</code></td>
+<td style="text-align:left">указать задержку перед записью</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-dur</code></td>
+<td style="text-align:left">указать длительность записи</td>
+</tr>
+</tbody>
+</table>
+<p>А еще скрипт подает звуковой сигнал перед началом и завершением&nbsp;записи.</p>
+<h3 id="-">Репозиторий:</h3>
+<p><a href="https://github.com/fatuk/recrec">https://github.com/fatuk/recrec</a></p>
+</section><script type="text/javascript">document.write(VK.Share.button(false,{type: "button", text: "Перепостить на стену"}));</script>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">
+        <div class="nav"><a href="/blog/"><i class="fa fa-hand-o-left"></i><span>все записи</span></a><a href="/blog/archive.html"><i class="fa fa-archive"></i><span>Архив</span></a><a href="/blog/tags.html"><i class="fa fa-tags"></i><span>Теги</span></a></div>
+        <section class="about"><p>Здесь я планирую описывать фронтенд инструменты и их настройки.</p>
+<p>Блог заводился чтобы упорядочить  мой личный ресерч.
+Если кому-то еще пригодятся мои статьи, буду признателен за указание ссылки на мой блог.</p>
+
+        </section>
+        <section class="copy">
+          <p>&copy; 2015&nbsp;<a href="http://fatuk.github.io">Андрей Фатюк&nbsp;</a>&mdash; работает на&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer><!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26912595 = new Ya.Metrika({id:26912595, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26912595" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+  </body>
+</html>

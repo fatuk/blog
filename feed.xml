@@ -5,9 +5,60 @@
     <atom:link href="http://fatuk.github.io/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://fatuk.github.io/blog</link>
     <description>Заметки на полях</description>
-    <pubDate>Sat, 31 Jan 2015 03:00:00 +0300</pubDate>
+    <pubDate>Sat, 14 Feb 2015 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Скрипт для запуска скрин рекордера byzans-record</title>
+      <link>http://fatuk.github.io/blog/blog/articles/recrec/</link>
+      <pubDate>Sat, 14 Feb 2015 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://fatuk.github.io/blog/blog/articles/recrec/</guid>
+      <author></author>
+      <description>&lt;p&gt;Небольшой обзор скрипта, который я собрал для себя, чтобы записывать короткие скринкасты в формате gif.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;article-pic&quot; src=&quot;demo.gif&quot; alt=&quot;кускус&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Предисловие&lt;/h2&gt;
+&lt;p&gt;Как-то понадобилось записать мои действия в консоли.
+Нашелся консольный скринрекодер &lt;strong&gt;byzans-record&lt;/strong&gt;. Качество записи меня устроило, но каждый раз указывать вручную область записи мне неподходило. Немного погуглив я нашел вариант скрипта, где была возможность указывать окно, а все параметры скрипт получал автоматически.&lt;/p&gt;
+&lt;p&gt;Представляю вашему вниманию мою сборку на основе &lt;a href=&quot;https://gist.github.com/lucy/3042755&quot;&gt;того&lt;/a&gt;скрипта.&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Установка:&lt;/h2&gt;
+&lt;p&gt;Просто поместите файл скрипта &lt;code&gt;recrec&lt;/code&gt; из &lt;a href=&quot;https://github.com/fatuk/recrec&quot;&gt;репозитория&lt;/a&gt; в папку &lt;code&gt;~/bin&lt;/code&gt;. Теперь вы можете вызвать его из консоли &lt;code&gt;recrec&lt;/code&gt;. Попробуйте написать &lt;code&gt;recrec --help&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Что скрипт умеет:&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;параметр&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;описание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;-h&lt;/code&gt; or &lt;code&gt;--help&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;справка&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;-name&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;указать имя конечного файла&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;-ext&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;указать расширение (gif, flv, ogg, ogv)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;-del&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;указать задержку перед записью&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;-dur&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;указать длительность записи&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;А еще скрипт подает звуковой сигнал перед началом и завершением записи.&lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;Репозиторий:&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/fatuk/recrec&quot;&gt;https://github.com/fatuk/recrec&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Скрипт для создания виртуальных хостов под apache2</title>
       <link>http://fatuk.github.io/blog/blog/articles/vhost/</link>
