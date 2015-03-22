@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>API сервер на WordPress - Блог о фронтенде
+    </title>
+    <link rel="alternate" href="http://fatuk.github.io/blog/blog/feed.xml" type="application/rss+xml" title="Заметки на полях">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|PT Serif:400,700,300">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/blog/style/main.css"><script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+  </head>
+  <body class="article-detail">
+    <header class="header">
+      <div class="content-wrap">
+        <h1>API сервер на WordPress</h1>
+        <p class="article-date">22 мар 2015</p>
+        <p class="author">Написал <span class="author"><a href="mailto:fatukk@gmail.com">Андрей Фатюк</a></span>
+        </p>
+      </div>
+    </header>
+    <div id="content">
+      <div class="content-wrap">
+        <article class="article"><a href="/blog/tag/wordpress/1/" class="big-tag">wordpress<i class="fa fa-tag"></i></a><a href="/blog/tag/plugin/1/" class="big-tag">plugin<i class="fa fa-tag"></i></a><a href="/blog/tag/api/1/" class="big-tag">api<i class="fa fa-tag"></i></a>
+          <section class="content"><p><img src="/blog/articles/wp-json-api/wp-logo.png" alt="wordpress"></p>
+<p>Недавно понадобилось получать данные о записях в WordPress в виде <span class="caps">JSON</span>. Выбор пал на <a href="https://wordpress.org/plugins/json-api/"><span class="caps">JSON</span> API</a>. Он позволяет получать любые данные о записях, страницах, кастомных полях, а также фильтровать их по категориям, слагам и т.д. Под катом идут частные случаи использования данного плагина.
+<span class="more"></span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Пример</th>
+<th style="text-align:left">Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>?json=get_posts&amp;category_name=cats&amp;custom_fields=my-custom-field&amp;meta_value=red</code></td>
+<td style="text-align:left">Посты по категории и значению кастомного поля</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>?json=get_posts</code></td>
+<td style="text-align:left">Все посты</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>?json=get_tag_posts&amp;tag_slug=banana</code></td>
+<td style="text-align:left">Посты по тегу</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>?json=get_recent_posts</code></td>
+<td style="text-align:left">Недавние посты</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>?json=get_post&amp;post_id=47</code></td>
+<td style="text-align:left">Пост по id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>http://www.example.org/api/get_post/?post_id=47</code></td>
+<td style="text-align:left">Пример user-friendly ссылки</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>http://www.example.org/api/get_tag_posts/?tag_slug=banana</code></td>
+<td style="text-align:left">Пример user-friendly ссылки</td>
+</tr>
+</tbody>
+</table>
+<p>Полная <a href="https://wordpress.org/plugins/json-api/other_notes/">документация</a> по&nbsp;плагину.</p>
+</section><script type="text/javascript">document.write(VK.Share.button(false,{type: "button", text: "Перепостить на стену"}));</script>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">
+        <div class="nav"><a href="/blog/"><i class="fa fa-hand-o-left"></i><span>все записи</span></a><a href="/blog/archive.html"><i class="fa fa-archive"></i><span>Архив</span></a><a href="/blog/tags.html"><i class="fa fa-tags"></i><span>Теги</span></a></div>
+        <section class="about"><p>Здесь я планирую описывать фронтенд инструменты и их настройки.</p>
+<p>Блог заводился чтобы упорядочить  мой личный ресерч.
+Если кому-то еще пригодятся мои статьи, буду признателен за указание ссылки на мой блог.</p>
+
+        </section>
+        <section class="copy">
+          <p>&copy; 2015&nbsp;<a href="http://fatuk.github.io">Андрей Фатюк&nbsp;</a>&mdash; работает на&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer><!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26912595 = new Ya.Metrika({id:26912595, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26912595" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+  </body>
+</html>

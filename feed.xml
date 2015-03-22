@@ -5,9 +5,59 @@
     <atom:link href="http://fatuk.github.io/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://fatuk.github.io/blog</link>
     <description>Заметки на полях</description>
-    <pubDate>Sat, 14 Feb 2015 03:00:00 +0300</pubDate>
+    <pubDate>Sun, 22 Mar 2015 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>API сервер на WordPress</title>
+      <link>http://fatuk.github.io/blog/blog/articles/wp-json-api/</link>
+      <pubDate>Sun, 22 Mar 2015 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://fatuk.github.io/blog/blog/articles/wp-json-api/</guid>
+      <author></author>
+      <description>&lt;p&gt;&lt;img src=&quot;/blog/articles/wp-json-api/wp-logo.png&quot; alt=&quot;wordpress&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Недавно понадобилось получать данные о записях в WordPress в виде JSON. Выбор пал на &lt;a href=&quot;https://wordpress.org/plugins/json-api/&quot;&gt;JSON API&lt;/a&gt;. Он позволяет получать любые данные о записях, страницах, кастомных полях, а также фильтровать их по категориям, слагам и т.д. Под катом идут частные случаи использования данного плагина.
+&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;Пример&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;Описание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;?json=get_posts&amp;amp;category_name=cats&amp;amp;custom_fields=my-custom-field&amp;amp;meta_value=red&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Посты по категории и значению кастомного поля&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;?json=get_posts&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Все посты&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;?json=get_tag_posts&amp;amp;tag_slug=banana&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Посты по тегу&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;?json=get_recent_posts&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Недавние посты&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;?json=get_post&amp;amp;post_id=47&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Пост по id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;http://www.example.org/api/get_post/?post_id=47&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Пример user-friendly ссылки&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;code&gt;http://www.example.org/api/get_tag_posts/?tag_slug=banana&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Пример user-friendly ссылки&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Полная &lt;a href=&quot;https://wordpress.org/plugins/json-api/other_notes/&quot;&gt;документация&lt;/a&gt; по плагину.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Скрипт для запуска скрин рекордера byzans-record</title>
       <link>http://fatuk.github.io/blog/blog/articles/recrec/</link>
